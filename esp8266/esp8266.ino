@@ -23,6 +23,8 @@ void setup() {
 void loop() {
   webSocket.loop();
   ArduinoOTA.handle();
+  Serial.println("Working...");
+  delay(1000);
 }
 
 void startWifi() {
