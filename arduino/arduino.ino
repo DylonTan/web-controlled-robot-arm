@@ -1,3 +1,8 @@
+#define SERVO_PIN_1 6
+#define SERVO_PIN_2 9
+#define SERVO_PIN_3 10
+#define SERVO_PIN_4 11
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
