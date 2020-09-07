@@ -18,12 +18,12 @@ void setup() {
   startWifi();
   startMDNS();
   startWebSocket();
+  Serial.println("ESP8266 started.");
 }
 
 void loop() {
   webSocket.loop();
   ArduinoOTA.handle();
-  Serial.println("Working...");
   delay(1000);
 }
 
@@ -97,7 +97,7 @@ void onEventHandler(uint8_t num, WStype_t type, uint8_t * payload, size_t len) {
       }
       break;
     case WStype_TEXT:
-      Serial.printf("[%u] sent position: %s\n", num, payload);
+      Serial.printf("%s", payload);
       break;
   }   
 }
