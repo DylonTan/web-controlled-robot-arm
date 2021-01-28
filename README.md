@@ -1,3 +1,3 @@
 ## Web Controlled Robot Arm
  
-A robot arm controlled over the web via WebSocket
+A robot arm controlled with an Arduino Uno over the web via WebSocket
