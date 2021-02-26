@@ -5,8 +5,8 @@
 
 WebSocketsServer webSocket(80);
 
-const char* ssid = "dylonkylie_2.4G@unifi";
-const char* password = "Ab670515";
+const char* ssid = ""; // Enter network ssid
+const char* password = ""; // Enter network password
 
 const char* mdnsName = "esp8266";
 

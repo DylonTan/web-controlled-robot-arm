@@ -38,7 +38,10 @@ void loop() {
 
 void forwardsHandler() {
   Serial.println("MOVING MOTOR FORWARDS");
-  servo2.write(90);
+  if (zAxisAngle - 20 >= 0) {
+    zAxisAngle = zAxisAngle - 20;
+    servo2.write(zAxisAngle);
+  }
 }
 
 void leftHandler() {
@@ -59,5 +62,8 @@ void rightHandler() {
 
 void backwardsHandler() {
   Serial.println("MOVING MOTOR BACKWARDS");
-  servo2.write(0);
+  if (zAxisAngle + 20 <= 180) {
+    zAxisAngle = zAxisAngle + 20;
+    servo2.write(zAxisAngle);
+  }
 }
